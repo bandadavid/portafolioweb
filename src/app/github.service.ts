@@ -13,8 +13,8 @@ export class GithubService {
 
   LoadRepos = () => this.httpClient.get(this.url)
   .pipe(
-    map((item:any) => item.filter((value: { fork: any; }) => !value.fork)),
-    map((item:any) => item.filter((value: { stargazers_count: any; }) => value.stargazers_count >= 1))
+    map((item:any) => item.filter((value: { fork: any; }) => !value.fork))
+    //map((item:any) => item.filter((value: { stargazers_count: any; }) => value.stargazers_count >= 1))
   );
 
 }
