@@ -10,20 +10,12 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 export class SidebarComponent implements OnInit, AfterViewInit {
 
   @ViewChild('asTitle') asTitle!:ElementRef;
-  links:Array<LinkModel> = [
-    {
-      link: 'https://www.linkedin.com/in/david-banda-8a6282196/',
-      icon: '<i class="uil uil-linkedin"></i>'
-    },
-    {
-      link: 'https://github.com/bandadavid',
-      icon: '<i class="uil uil-github-alt"></i>'
-    },
-    {
-      link: 'mailto:bandadavid531@gmail.com',
-      icon: '<i class="uil uil-envelope"></i>'
-    }
-  ];
+  // links:Array<LinkModel> = [
+  //   {
+  //     link: 'https://www.youtube.com/channel/UCBXzVk8wvQnBw_EDoalcWLw',
+  //     icon: '<i class="uil uil-youtube"></i>'
+  //   }
+  // ];
   
   constructor() { }
 

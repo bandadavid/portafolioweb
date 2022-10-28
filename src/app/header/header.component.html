@@ -7,9 +7,14 @@
 
     <div class="section-2">
         <ul class="list-menu">
-            <li class="item-menu" *ngFor="let item of [1,1,1]; let i = index">
-                <span class="item-number">{{i}}.</span>
-                <span class="link">Link</span>
+            <li class="btn-curriculum">
+                <a href="../../assets/CVACTUALIZADO.pdf" download="CVACTUALIZADO.pdf"><i class="uil uil-file-download"></i>&nbsp;&nbsp;Descargar Currículum</a>
+            </li>
+            <li class="item-menu" *ngFor="let linkObj of links;">
+                <a [href]="linkObj.link" target="_blank">
+                    <span class="item-icon" [innerHTML]="linkObj.icon"></span>
+                    {{linkObj.name}}
+                </a>
             </li>
         </ul>
     </div>

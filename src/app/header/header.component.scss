@@ -5,30 +5,46 @@
     align-items: center;
     align-content: center;
    // background-color: tomato;
-    height: 3.5rem;
+    height: 4.5rem;
     box-shadow: 0 0 29px #3c3c3c6b;
     border-bottom: solid 1px #3d3f7b4d;
 }
 
 .section-2 {
+
+    .btn-curriculum{
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--color-2);
+        border-radius: 1rem;
+        &:hover{
+            opacity: .8;
+        }
+    }
+
     .list-menu{
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
+        text-decoration: none; 
 
         .item-menu{
             cursor: pointer;
-            padding: 0 1rem;
+            padding: 10px .5rem;
             transition: all ease 200ms;
             &:hover{
                 opacity: .8;
             }
         }
 
-        .item-number{
+        .item-icon{
             color: var(--color-2);
             padding: 0 .5rem;
+        }
+
+        a{
+            text-decoration: none;
         }
     }
 }
